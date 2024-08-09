@@ -1,0 +1,36 @@
+*{
+  padding: 0; margin: 0; box-sizing: border-box;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --button: #04314e;    
+  --green: #2ecc71;   
+  --red: #e74c3c;     
+  --error: #e84e3d33;     
+  --base: #ecf0f1;  
+  --card:#fff;
+  --text: #2c3e50;    
+  --border: #bdc3c7;     
+  --hoverButton: #2980b9;      
+  --shadow: rgba(0, 0, 0, 0.1);
+  --colorButton:#fff;
+}
+body{
+  background-color: var(--base);
+  color: var(--text);
+}
+button{
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+button:active{
+  opacity: 0.8;
+}
+@keyframes bownce {
+  from{
+    transform: scale(0.1);
+  } to{
+    transform: scale(1.1);
+  }
+}

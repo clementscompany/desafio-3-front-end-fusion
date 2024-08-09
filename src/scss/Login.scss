@@ -1,0 +1,150 @@
+.mainLogin {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formLogin {
+    padding: 20px;
+    background-color: var(--card);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 22px;
+    animation: bounce .2s linear;
+
+    @media screen and (max-width: 600px) {
+        padding: 6px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    header {
+        text-align: center;
+        color: var(--button);
+        border-bottom: 1px solid var(--border);
+
+        i {
+            font-size: 2em;
+        }
+    }
+}
+
+.textError {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.textError.error {
+    color: var(--red);
+    background-color: var(--error);
+}
+
+.inputBox {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 12px 0;
+
+    label {
+        color: var(--button);
+    }
+
+    small {
+        color: var(--red);
+    }
+
+    .input {
+        width: 350px; 
+        position: relative;
+        input {
+            width: 100%; 
+            border: none;
+            background-color: var(--base);
+            padding: 16px;
+            border-radius: 8px;
+            outline: 2px solid transparent;
+            transition: all .1s ease-in;
+
+            &:focus {
+                outline: 1px solid var(--hoverButton);
+            }
+        }
+
+        i {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            padding: 0 12px;
+            background-color: var(--button);
+            color: var(--colorButton);
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .buttonEye {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            padding: 0 12px;
+            background-color: var(--button);
+            color: var(--colorButton);
+            cursor: pointer;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+    }
+}
+
+.buttonsLog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 22px;
+    gap: 12px;
+
+    .logButton {
+       flex: 1;
+       padding: 13px;
+       border-radius: 8px;
+       border: 2px solid transparent;
+       font-weight: bold;
+
+        &:nth-of-type(1) {
+            background-color: var(--button);
+            color: var(--colorButton);
+        }
+
+        &:nth-of-type(2) {
+            background-color: transparent;
+            color: var(--button);
+            border: 2px solid transparent;
+        }
+    }
+}
+
+.forgotPass {
+    padding-top: 12px;
+
+    a {
+        color: var(--button);
+    }
+}
+
+
